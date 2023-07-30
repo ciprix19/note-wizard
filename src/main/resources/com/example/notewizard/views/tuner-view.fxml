@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+
+<Pane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" styleClass="pane-style" stylesheets="@../cssStyle/pane-style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notewizard.controllers.TunerController">
+   <children>
+      <ComboBox fx:id="tuningOptionComboBox" layoutX="14.0" layoutY="35.0" onAction="#setTuning" prefHeight="25.0" prefWidth="178.0" promptText="Choose Tuning..." stylesheets="@../cssStyle/combo-box-style.css" />
+      <ImageView fx:id="guitarImageView" fitHeight="315.0" fitWidth="317.0" layoutX="92.0" layoutY="135.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/bg-fc9aaea058f25df1786edebc8127c8df.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="111.0" layoutY="281.0" prefHeight="56.0" prefWidth="56.0">
+         <children>
+            <Circle fx:id="string1circle" fill="#1e1e1e" radius="23.0" stroke="#1e1e1e" strokeType="INSIDE" />
+            <Label fx:id="string1text" stylesheets="@../cssStyle/text-style.css" text="Label" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="111.0" layoutY="225.0" prefHeight="56.0" prefWidth="56.0">
+         <children>
+            <Circle fx:id="string2circle" fill="#1e1e1e" radius="23.0" stroke="#1e1e1e" strokeType="INSIDE" />
+            <Label fx:id="string2text" stylesheets="@../cssStyle/text-style.css" text="Label" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="111.0" layoutY="169.0" prefHeight="56.0" prefWidth="56.0">
+         <children>
+            <Circle fx:id="string3circle" fill="#1e1e1e" radius="23.0" stroke="#1e1e1e" strokeType="INSIDE" />
+            <Label fx:id="string3text" stylesheets="@../cssStyle/text-style.css" text="Label" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="335.0" layoutY="169.0" prefHeight="56.0" prefWidth="56.0">
+         <children>
+            <Circle fx:id="string4circle" fill="#1e1e1e" radius="23.0" stroke="#1e1e1e" strokeType="INSIDE" />
+            <Label fx:id="string4text" stylesheets="@../cssStyle/text-style.css" text="Label" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="335.0" layoutY="225.0" prefHeight="56.0" prefWidth="56.0">
+         <children>
+            <Circle fx:id="string5circle" fill="#1e1e1e" radius="23.0" stroke="#1e1e1e" strokeType="INSIDE" />
+            <Label fx:id="string5text" stylesheets="@../cssStyle/text-style.css" text="Label" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="335.0" layoutY="281.0" prefHeight="56.0" prefWidth="56.0">
+         <children>
+            <Circle fx:id="string6circle" fill="#1e1e1e" radius="23.0" stroke="#1e1e1e" strokeType="INSIDE" />
+            <Label fx:id="string6text" stylesheets="@../cssStyle/text-style.css" text="Label" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="223.0" layoutY="79.0" prefHeight="56.0" prefWidth="56.0">
+         <children>
+            <Circle fx:id="freqIndicatorCircle" fill="#1e1e1e" radius="23.0" stroke="#1e1e1e" strokeType="INSIDE" />
+            <Label fx:id="freqIndicatorText" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="38.0" stylesheets="@../cssStyle/text-style.css" textAlignment="CENTER" />
+         </children>
+      </StackPane>
+      <Polygon fill="#1e1e1e" layoutX="251.0" layoutY="145.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -60.0" rotate="180.0" scaleX="0.2" scaleY="0.2" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE" />
+      <ComboBox fx:id="detectionAlgorithmComboBox" layoutX="308.0" layoutY="35.0" onAction="#setDetection" prefHeight="25.0" prefWidth="178.0" promptText="Choose Detection..." stylesheets="@../cssStyle/combo-box-style.css" />
+   </children>
+</Pane>

@@ -1,0 +1,10 @@
+.label {
+    -fx-text-fill: #FFE6C7;
+    -fx-font-weight: bold;
+}
+
+.welcome-text {
+    -fx-text-fill: #1E1E1E;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" styleClass="pane-style" stylesheets="@../cssStyle/pane-style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notewizard.controllers.WriterController">
+   <children>
+      <Button fx:id="startRecordingButton" layoutX="195.0" layoutY="136.0" mnemonicParsing="false" onAction="#startRecording" stylesheets="@../cssStyle/button-style.css" text="Start Recording" textFill="#ffe6c7">
+         <styleClass>
+            <String fx:value="button-with-background" />
+            <String fx:value="text" />
+         </styleClass>
+      </Button>
+      <ComboBox fx:id="startingStringComboBox" layoutX="14.0" layoutY="59.0" onAction="#setStartingString" prefHeight="25.0" prefWidth="178.0" promptText="Choose Starting String..." stylesheets="@../cssStyle/combo-box-style.css" />
+      <ComboBox fx:id="tuningOptionComboBox" layoutX="14.0" layoutY="26.0" onAction="#setTuning" prefHeight="25.0" prefWidth="178.0" promptText="Choose Tuning..." stylesheets="@../cssStyle/combo-box-style.css" />
+      <Label fx:id="feedbackLabel" layoutX="250.0" layoutY="54.0" prefHeight="17.0" prefWidth="212.0" stylesheets="@../cssStyle/text-style.css" text="Choose starting string to begin!" />
+      <TextArea fx:id="tabTextArea" editable="false" layoutX="14.0" layoutY="196.0" prefHeight="240.0" prefWidth="472.0" style="-fx-background-color: transparent;" styleClass="text-area" stylesheets="@../cssStyle/text-area.css" />
+      <Button fx:id="clearButton" layoutX="47.0" layoutY="136.0" mnemonicParsing="false" onAction="#clearTab" prefHeight="39.0" prefWidth="111.0" stylesheets="@../cssStyle/button-style.css" text="Clear Tab" textFill="#ffe6c7">
+         <styleClass>
+            <String fx:value="button-with-background" />
+            <String fx:value="text" />
+         </styleClass>
+      </Button>
+      <Button fx:id="exportButton" layoutX="339.0" layoutY="136.0" mnemonicParsing="false" onAction="#exportTo" prefHeight="39.0" prefWidth="111.0" stylesheets="@../cssStyle/button-style.css" text="Export!" textFill="#ffe6c7">
+         <styleClass>
+            <String fx:value="button-with-background" />
+            <String fx:value="text" />
+         </styleClass>
+      </Button>
+      <ComboBox fx:id="modeOptionComboBox" layoutX="14.0" layoutY="91.0" onAction="#setModeOption" prefHeight="25.0" prefWidth="178.0" promptText="Choose Mode..." stylesheets="@../cssStyle/combo-box-style.css" />
+   </children>
+</Pane>

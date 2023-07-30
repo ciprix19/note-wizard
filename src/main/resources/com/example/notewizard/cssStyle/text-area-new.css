@@ -1,0 +1,24 @@
+.text-area {
+    -fx-text-fill: #FFE6C7;
+    -fx-font-weight: bold;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+}
+
+.text-area .content {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 200px;
+    display: block;
+    margin: auto;
+    -fx-background-color: #454545;
+}
+
+.text-area .content .text {
+    -fx-text-alignment: center;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 200px;
+    display: block;
+    margin: auto;
+}

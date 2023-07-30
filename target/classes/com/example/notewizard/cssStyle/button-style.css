@@ -1,0 +1,29 @@
+.button-with-background {
+    -fx-background-color:  #1E1E1E;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: 30% auto;
+}
+
+.home-button {
+    -fx-background-image: url('../images/home.png');
+}
+
+.tuner-button {
+    -fx-background-image: url('../images/tuning-fork.png');
+}
+
+.writer-button {
+    -fx-background-image: url('../images/music-notes.png');
+}
+
+.text {
+    -fx-text-fill: #FFE6C7;
+    -fx-font-weight: bold;
+}
+

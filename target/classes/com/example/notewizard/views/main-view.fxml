@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #454545;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notewizard.controllers.MainController">
+   <children>
+      <Pane fx:id="secondPane" layoutX="150.0" prefHeight="450.0" prefWidth="500.0" styleClass="pane-style" stylesheets="@../cssStyle/pane-style.css" />
+      <Button fx:id="homeButton" mnemonicParsing="false" onAction="#loadHome" prefHeight="150.0" prefWidth="150.0" stylesheets="@../cssStyle/button-style.css">
+         <styleClass>
+            <String fx:value="button-with-background" />
+            <String fx:value="home-button" />
+         </styleClass></Button>
+      <Button fx:id="tunerButton" layoutY="150.0" mnemonicParsing="false" onAction="#loadTuner" prefHeight="150.0" prefWidth="150.0" stylesheets="@../cssStyle/button-style.css">
+         <styleClass>
+            <String fx:value="button-with-background" />
+            <String fx:value="tuner-button" />
+         </styleClass></Button>
+      <Button fx:id="tabWriterButton" layoutY="300.0" mnemonicParsing="false" onAction="#loadWriter" prefHeight="150.0" prefWidth="150.0" stylesheets="@../cssStyle/button-style.css">
+         <styleClass>
+            <String fx:value="button-with-background" />
+            <String fx:value="writer-button" />
+         </styleClass></Button>
+   </children>
+</Pane>

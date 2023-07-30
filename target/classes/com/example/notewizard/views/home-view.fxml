@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" stylesheets="@../cssStyle/pane-style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="182.0" layoutY="99.0" styleClass="welcome-text" stylesheets="@../cssStyle/text-style.css" text="NoteWizard" />
+      <TextArea editable="false" layoutX="57.0" layoutY="176.0" prefHeight="98.0" prefWidth="386.0" styleClass="text-area" stylesheets="@../cssStyle/text-area-new.css" text="Welcome to the Automatic Guitar Tuner and Tab Writer - effortless tools for musicians of all levels&#10;&#10;Jumpstart your music journey: tune your guitar and start creating tabs in real time!" wrapText="true" />
+   </children>
+</Pane>
